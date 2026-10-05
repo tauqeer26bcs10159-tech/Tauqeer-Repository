@@ -1,0 +1,267 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+
+  font-family: "Lato", Verdana, sans-serif;
+  line-height: 20px;
+  background-image: url("light-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: red;
+  background-image: url("dark-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  color: black;
+}
+
+body.dark-theme a {
+  color: red;
+}
+
+a:hover,
+body.dark-theme nav a:hover,
+body.dark-theme .card a:hover {
+  font-size: 1.1em;
+  color: red;
+}
+
+header,
+main {
+  max-width: 850px;
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+.brieflink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+nav a {
+  margin: 15px;
+  color: rgb(88, 62, 239);
+}
+
+body.dark-theme nav a {
+  color: rgb(88, 62, 239);
+}
+
+#th-change {
+  font-family: inherit;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid rgb(31, 111, 178);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+body.dark-theme #th-change {
+  color: red;
+  border-color: rgb(109, 179, 238);
+}
+
+#th-change:hover {
+  background-color: rgb(31, 111, 178);
+  color: beige;
+}
+
+body.dark-theme #th-change:hover {
+  background-color: rgb(109, 179, 238);
+  color: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 12px;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  border: 4px solid rgb(31, 111, 178);
+}
+
+body.dark-theme .hero img {
+  border-color: rgb(109, 179, 238);
+}
+
+.hero h1 {
+  line-height: 1;
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1;
+}
+
+body.dark-theme .hero p {
+  color: rgb(124, 252, 0);
+}
+
+.card {
+  background-color: beige;
+  border-left: 6px solid pink;
+  border-radius: 50px;
+  padding: 25px;
+  margin: 30px;
+}
+
+body.dark-theme .card {
+  background-color: rgb(41, 35, 74);
+  color: yellow;
+}
+
+.section-title {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 20px;
+  background-color: rgb(168, 168, 245);
+}
+
+.card h2 {
+  border-radius: 50px;
+  color: black;
+}
+
+body.dark-theme .card h2 {
+  color: yellow;
+}
+
+body.dark-theme .card a {
+  color: yellow;
+}
+
+.intro-text {
+  font-family: Georgia, serif;
+}
+
+.intro-2 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.intro-3 {
+  font-family: "Courier New", monospace;
+}
+
+.card p {
+  max-width: 65ch;
+}
+
+.contact-block {
+  line-height: 1.2;
+}
+
+.contact-info p {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-set span {
+  border: 2px solid rgb(31, 111, 178);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 15px;
+}
+
+.skill-set span:hover {
+  font-size: 1.1em;
+}
+
+body.dark-theme .skill-set span {
+  border-color: rgb(109, 179, 238);
+}
+
+@media (max-width: 768px) {
+  header,
+  main {
+    padding: 8px;
+  }
+
+  .brieflink {
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 6px;
+    font-size: 13px;
+  }
+
+  #th-change {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .hero img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .card {
+    margin: 20px 5px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .skill-set {
+    gap: 7px;
+  }
+
+  .skill-set span {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+
+  .card p {
+    max-width: 100%;
+  }
+}
