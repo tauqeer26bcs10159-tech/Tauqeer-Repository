@@ -4,12 +4,12 @@ html {
 
 * {
   box-sizing: border-box;
-}
+} /* forces every element on a webpage to include its padding and borders inside its specified width and height*/
 
 body {
   margin: 0px;
 
-  font-family: "Lato", Verdana, sans-serif;
+  font-family: "Lato", Verdana, sans-serif; /* if lato not on his laptop or phone, chooses next one of these*/
   line-height: 20px;
   background-image: url("light-bg.jpg");
   background-repeat: no-repeat;
